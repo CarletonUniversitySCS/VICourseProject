@@ -1,0 +1,300 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel courseChart search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_AVG_rate_}">
+	{BEGIN AVG_rate__fieldblock}		
+	<td>
+		{$label courseChart AVG_rate_}
+	</td>
+	<td>
+		<input type="checkbox" {$AVG_rate__notbox}>
+	</td>
+	<td>
+		{$searchtype_AVG_rate_}
+	</td>
+	<td>
+		{$AVG_rate__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AVG_rate__editcontrol1}&nbsp;
+	</td>
+{END AVG_rate__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AVG_difficulty_}">
+	{BEGIN AVG_difficulty__fieldblock}		
+	<td>
+		{$label courseChart AVG_difficulty_}
+	</td>
+	<td>
+		<input type="checkbox" {$AVG_difficulty__notbox}>
+	</td>
+	<td>
+		{$searchtype_AVG_difficulty_}
+	</td>
+	<td>
+		{$AVG_difficulty__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AVG_difficulty__editcontrol1}&nbsp;
+	</td>
+{END AVG_difficulty__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_courseName}">
+	{BEGIN courseName_fieldblock}		
+	<td>
+		{$label courseChart courseName}
+	</td>
+	<td>
+		<input type="checkbox" {$courseName_notbox}>
+	</td>
+	<td>
+		{$searchtype_courseName}
+	</td>
+	<td>
+		{$courseName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$courseName_editcontrol1}&nbsp;
+	</td>
+{END courseName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_subject}">
+	{BEGIN subject_fieldblock}		
+	<td>
+		{$label courseChart subject}
+	</td>
+	<td>
+		<input type="checkbox" {$subject_notbox}>
+	</td>
+	<td>
+		{$searchtype_subject}
+	</td>
+	<td>
+		{$subject_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$subject_editcontrol1}&nbsp;
+	</td>
+{END subject_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_level}">
+	{BEGIN level_fieldblock}		
+	<td>
+		{$label courseChart level}
+	</td>
+	<td>
+		<input type="checkbox" {$level_notbox}>
+	</td>
+	<td>
+		{$searchtype_level}
+	</td>
+	<td>
+		{$level_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$level_editcontrol1}&nbsp;
+	</td>
+{END level_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_type}">
+	{BEGIN type_fieldblock}		
+	<td>
+		{$label courseChart type}
+	</td>
+	<td>
+		<input type="checkbox" {$type_notbox}>
+	</td>
+	<td>
+		{$searchtype_type}
+	</td>
+	<td>
+		{$type_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$type_editcontrol1}&nbsp;
+	</td>
+{END type_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_courseNo}">
+	{BEGIN courseNo_fieldblock}		
+	<td>
+		{$label courseChart courseNo}
+	</td>
+	<td>
+		<input type="checkbox" {$courseNo_notbox}>
+	</td>
+	<td>
+		{$searchtype_courseNo}
+	</td>
+	<td>
+		{$courseNo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$courseNo_editcontrol1}&nbsp;
+	</td>
+{END courseNo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_COUNT_dropid_}">
+	{BEGIN COUNT_dropid__fieldblock}		
+	<td>
+		{$label courseChart COUNT_dropid_}
+	</td>
+	<td>
+		<input type="checkbox" {$COUNT_dropid__notbox}>
+	</td>
+	<td>
+		{$searchtype_COUNT_dropid_}
+	</td>
+	<td>
+		{$COUNT_dropid__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$COUNT_dropid__editcontrol1}&nbsp;
+	</td>
+{END COUNT_dropid__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_courseNo1}">
+	{BEGIN courseNo1_fieldblock}		
+	<td>
+		{$label courseChart courseNo1}
+	</td>
+	<td>
+		<input type="checkbox" {$courseNo1_notbox}>
+	</td>
+	<td>
+		{$searchtype_courseNo1}
+	</td>
+	<td>
+		{$courseNo1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$courseNo1_editcontrol1}&nbsp;
+	</td>
+{END courseNo1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_COUNT_selectionid_}">
+	{BEGIN COUNT_selectionid__fieldblock}		
+	<td>
+		{$label courseChart COUNT_selectionid_}
+	</td>
+	<td>
+		<input type="checkbox" {$COUNT_selectionid__notbox}>
+	</td>
+	<td>
+		{$searchtype_COUNT_selectionid_}
+	</td>
+	<td>
+		{$COUNT_selectionid__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$COUNT_selectionid__editcontrol1}&nbsp;
+	</td>
+{END COUNT_selectionid__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_courseNo2}">
+	{BEGIN courseNo2_fieldblock}		
+	<td>
+		{$label courseChart courseNo2}
+	</td>
+	<td>
+		<input type="checkbox" {$courseNo2_notbox}>
+	</td>
+	<td>
+		{$searchtype_courseNo2}
+	</td>
+	<td>
+		{$courseNo2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$courseNo2_editcontrol1}&nbsp;
+	</td>
+{END courseNo2_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-chart" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Back to {$backtomasterlink_caption}</b>
+</a></div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+
+
+{BEGIN asearch_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}">	<a href="courseChart_search.php" class="rnr-button" {$advsearchlink_attrs}>Advanced search</a>
+</div>
+{END asearch_link}
+
+
+
+
+<div class="rnr-hfiller"></div>
+
+</div>
+{END container_toplinks}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+
+{BEGIN searchform_block}
+<div  class="rnr-brickcontents style2 rnr-b-vsearch1 {$brickclass_vsearch1}">	Search for:
+	{BEGIN searchPanelTopButtons}	
+	<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}"  data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	&nbsp;		
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+	</span>
+	{END searchPanelTopButtons}
+</div>{END searchform_block}
+
+
+{BEGIN searchform_block}
+<div  class="rnr-brickcontents style2 rnr-b-vsearch2 {$brickclass_vsearch2}"><div>
+	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		&nbsp;
+		{BEGIN searchform_showall}
+			<a class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>	
+</div></div>{END searchform_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="rnr-brickcontents style1 rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>{END searchsaving_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+{BEGIN filterPanel}
+<div  class="rnr-brickcontents  rnr-b-filterpanel {$brickclass_filterpanel}"><div class="filterPanelContainer {$filterPanelStateClass}">
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_subject}
+	<div class="filter-field filter-subject-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label courseChart subject}
+			{BEGIN clearLink_subject}
+			<a href="#" class="filter-clear filter-clear-subject">Clear</a>
+			{END clearLink_subject}
+		</div>
+		{BEGIN filterCtrlBlock_subject}
+		<div class="filter-values rnr-bg style1 {$collapsedClass_subject} {$visibilityClass_subject}">
+			{$subject_filter}	
+		</div>
+		{END filterCtrlBlock_subject}
+		
+				{BEGIN filter_button_showmore_subject}
+		<div class="rnr-bg style1 filter-show-more {$collapsedClass_subject}">
+			<a class="filter-show-more-link filterShowMore_subject" href="#">Show {$numberOfItemsToSHow_subject} more</a>
+		</div>
+		{END filter_button_showmore_subject}
+		
+				
+			</div>
+{END filter_control_subject}
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_level}
+	<div class="filter-field filter-level-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label courseChart level}
+			{BEGIN clearLink_level}
+			<a href="#" class="filter-clear filter-clear-level">Clear</a>
+			{END clearLink_level}
+		</div>
+		{BEGIN filterCtrlBlock_level}
+		<div class="filter-values rnr-bg style1 {$collapsedClass_level} {$visibilityClass_level}">
+			{$level_filter}	
+		</div>
+		{END filterCtrlBlock_level}
+		
+				{BEGIN filter_button_showmore_level}
+		<div class="rnr-bg style1 filter-show-more {$collapsedClass_level}">
+			<a class="filter-show-more-link filterShowMore_level" href="#">Show {$numberOfItemsToSHow_level} more</a>
+		</div>
+		{END filter_button_showmore_level}
+		
+				
+			</div>
+{END filter_control_level}
+
+
+	
+	
+
+
+
+	
+	
+	
+		
+{BEGIN filter_control_type}
+	<div class="filter-field filter-type-container">
+		<div class="filter-expander rnr-bg style2">
+			<span class="filter-indicator">
+							&#x25B2;
+			</span>
+						{$label courseChart type}
+			{BEGIN clearLink_type}
+			<a href="#" class="filter-clear filter-clear-type">Clear</a>
+			{END clearLink_type}
+		</div>
+		{BEGIN filterCtrlBlock_type}
+		<div class="filter-values rnr-bg style1 {$collapsedClass_type} {$visibilityClass_type}">
+			{$type_filter}	
+		</div>
+		{END filterCtrlBlock_type}
+		
+				{BEGIN filter_button_showmore_type}
+		<div class="rnr-bg style1 filter-show-more {$collapsedClass_type}">
+			<a class="filter-show-more-link filterShowMore_type" href="#">Show {$numberOfItemsToSHow_type} more</a>
+		</div>
+		{END filter_button_showmore_type}
+		
+				
+			</div>
+{END filter_control_type}
+</div></div>{END filterPanel}
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_form}
+<div class="rnr-c rnr-ch rnr-c-form">
+
+
+<div  class="style1 rnr-bl rnr-b-chart {$brickclass_chart}">       {BEGIN chart_block}
+       <div id="chart_block{$id}">
+{$courseChart_chart 700 530}
+        </div>
+        {END chart_block}</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_form}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

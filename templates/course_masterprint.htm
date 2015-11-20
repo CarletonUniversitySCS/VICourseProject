@@ -1,0 +1,54 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}">	<h1>{$pagetitlelabel course masterprint}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-masterprintfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$AVG_difficulty__class}">{$label course AVG_difficulty_}</th>
+			<th class="{$AVG_rate__class}">{$label course AVG_rate_}</th>
+			<th class="{$courseNo_class}">{$label course courseNo}</th>
+			<th class="{$courseName_class}">{$label course courseName}</th>
+			<th class="{$level_class}">{$label course level}</th>
+			<th class="{$subject_class}">{$label course subject}</th>
+			<th class="{$type_class}">{$label course type}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$AVG_difficulty__class}">{$AVG_difficulty__mastervalue}</td>
+			<td class="{$AVG_rate__class}">{$AVG_rate__mastervalue}</td>
+			<td class="{$courseNo_class}">{$courseNo_mastervalue}</td>
+			<td class="{$courseName_class}">{$courseName_mastervalue}</td>
+			<td class="{$level_class}">{$level_mastervalue}</td>
+			<td class="{$subject_class}">{$subject_mastervalue}</td>
+			<td class="{$type_class}">{$type_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+
+{END container_mastergrid}
+
+</div>

@@ -1,0 +1,356 @@
+body.page-chart
+{
+padding-top:10px; padding-left:10px;
+}
+.page-chart .rnr-c-message,
+  .rnr-pagewrapper .page-chart .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-message
+{
+margin-bottom:5px;
+}
+.page-chart .rnr-c-message,
+  .rnr-pagewrapper .page-chart .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-message
+{
+min-width:100px;
+}
+.page-chart .rnr-b-message,
+  .rnr-pagewrapper .page-chart .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-message,
+  .rnr-pagewrapper .page-chart .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-message
+{
+text-align: center;
+}
+.page-chart .rnr-b-message > *,
+  .rnr-pagewrapper .page-chart .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-message > *
+{
+
+}
+.page-chart .rnr-c-form,
+  .rnr-pagewrapper .page-chart .rnr-c-form,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-form
+{
+margin-bottom:5px;
+}
+.page-chart .rnr-b-chart,
+  .rnr-pagewrapper .page-chart .rnr-b-chart,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-chart
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-chart,
+  .rnr-pagewrapper .page-chart .rnr-b-chart,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-chart
+{
+text-align: left;
+}
+.page-chart .rnr-b-chart > *,
+  .rnr-pagewrapper .page-chart .rnr-b-chart > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-chart > *
+{
+
+}
+body.page-chart .rnr-center
+{
+padding-right: 5px;
+}
+.page-chart .rnr-c-left,
+  .rnr-pagewrapper .page-chart .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-left
+{
+margin-bottom:5px;
+}
+.page-chart .rnr-c-left,
+  .rnr-pagewrapper .page-chart .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-left
+{
+min-width:100px;
+}
+.page-chart .rnr-b-vmenu,
+  .rnr-pagewrapper .page-chart .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vmenu
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-vmenu,
+  .rnr-pagewrapper .page-chart .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vmenu
+{
+text-align: left;
+}
+.page-chart .rnr-b-vmenu > *,
+  .rnr-pagewrapper .page-chart .rnr-b-vmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vmenu > *
+{
+
+}
+.page-chart .rnr-b-vsearch1,
+  .rnr-pagewrapper .page-chart .rnr-b-vsearch1,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vsearch1
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-vsearch1,
+  .rnr-pagewrapper .page-chart .rnr-b-vsearch1,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vsearch1
+{
+text-align: left;
+}
+.page-chart .rnr-b-vsearch1 > *,
+  .rnr-pagewrapper .page-chart .rnr-b-vsearch1 > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vsearch1 > *
+{
+
+}
+.page-chart .rnr-b-vsearch2,
+  .rnr-pagewrapper .page-chart .rnr-b-vsearch2,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vsearch2
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-vsearch2,
+  .rnr-pagewrapper .page-chart .rnr-b-vsearch2,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vsearch2
+{
+text-align: left;
+}
+.page-chart .rnr-b-vsearch2 > *,
+  .rnr-pagewrapper .page-chart .rnr-b-vsearch2 > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-vsearch2 > *
+{
+
+}
+.page-chart .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .page-chart .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-search_saving_buttons
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .page-chart .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-search_saving_buttons
+{
+text-align: left;
+}
+.page-chart .rnr-b-search_saving_buttons > *,
+  .rnr-pagewrapper .page-chart .rnr-b-search_saving_buttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-search_saving_buttons > *
+{
+
+}
+.page-chart .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-chart .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-searchpanel
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-chart .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-searchpanel
+{
+text-align: left;
+}
+.page-chart .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .page-chart .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-searchpanel > *
+{
+
+}
+.page-chart .rnr-b-filterpanel,
+  .rnr-pagewrapper .page-chart .rnr-b-filterpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-filterpanel
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-filterpanel,
+  .rnr-pagewrapper .page-chart .rnr-b-filterpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-filterpanel
+{
+text-align: left;
+}
+.page-chart .rnr-b-filterpanel > *,
+  .rnr-pagewrapper .page-chart .rnr-b-filterpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-filterpanel > *
+{
+
+}
+body.page-chart  > * > * > .rnr-left
+{
+min-width:200px;
+}
+body.page-chart .rnr-left
+{
+padding-right: 5px;
+}
+.page-chart .rnr-c-master,
+  .rnr-pagewrapper .page-chart .rnr-c-master,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-master
+{
+margin-bottom:5px;
+}
+.page-chart .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-chart .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-masterinfo
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-chart .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-masterinfo
+{
+text-align: left;
+}
+.page-chart .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .page-chart .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-masterinfo > *
+{
+
+}
+.page-chart .rnr-c-toplinks,
+  .rnr-pagewrapper .page-chart .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-toplinks
+{
+margin-bottom:5px;
+}
+.page-chart .rnr-c-toplinks,
+  .rnr-pagewrapper .page-chart .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-c-toplinks
+{
+min-width:100px;
+}
+.page-chart .rnr-b-loggedas,
+  .rnr-pagewrapper .page-chart .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-loggedas
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-loggedas,
+  .rnr-pagewrapper .page-chart .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-loggedas
+{
+text-align: left;
+}
+.page-chart .rnr-b-loggedas > *,
+  .rnr-pagewrapper .page-chart .rnr-b-loggedas > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-loggedas > *
+{
+
+}
+.page-chart .rnr-b-toplinks_print,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_print
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-toplinks_print,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_print,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_print
+{
+text-align: left;
+}
+.page-chart .rnr-b-toplinks_print > *,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_print > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_print > *
+{
+
+}
+.page-chart .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_advsearch
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_advsearch
+{
+text-align: left;
+}
+.page-chart .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_advsearch > *
+{
+
+}
+.page-chart .rnr-b-toplinks_import,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_import,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_import
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-toplinks_import,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_import,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_import
+{
+text-align: left;
+}
+.page-chart .rnr-b-toplinks_import > *,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_import > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_import > *
+{
+
+}
+.page-chart .rnr-b-toplinks_export,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_export,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_export
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-toplinks_export,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_export,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_export
+{
+text-align: left;
+}
+.page-chart .rnr-b-toplinks_export > *,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_export > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_export > *
+{
+
+}
+.page-chart .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_export_links
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_export_links,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_export_links
+{
+text-align: left;
+}
+.page-chart .rnr-b-toplinks_export_links > *,
+  .rnr-pagewrapper .page-chart .rnr-b-toplinks_export_links > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-toplinks_export_links > *
+{
+
+}
+.page-chart .rnr-b-languages,
+  .rnr-pagewrapper .page-chart .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-languages
+{
+white-space: nowrap;
+}
+.page-chart .rnr-b-languages,
+  .rnr-pagewrapper .page-chart .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-languages
+{
+text-align: right;
+}
+.page-chart .rnr-b-languages > *,
+  .rnr-pagewrapper .page-chart .rnr-b-languages > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart .rnr-b-languages > *
+{
+
+}
+body.page-chart .rnr-top
+{
+padding-right: 5px;
+}
